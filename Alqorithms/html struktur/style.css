@@ -1,0 +1,31 @@
+.box-strong-fl {
+    display: flex;
+    justify-content: space-between;
+
+}
+.box-strong-fl-left {
+    display: flex;
+    justify-content: space-between;
+}
+.box-strong-fl-right {
+    display: flex;
+justify-content: space-between;
+}
+
+.box-strong-sl-left {
+    display: flex;
+    justify-content: space-betweens;
+}
+.box-strong-sl-left-picture {
+    display: flex;
+    justify-content: space-between;
+}
+.box-strong-sl-right  {
+
+    display: flex;
+    justify-content: space-between;
+}
+.box-strong-sl-right-head {
+    display: flex;
+    justify-content: space-between;
+}
