@@ -1,0 +1,52 @@
+body,h1,h2,h3,h4,h5,h6,ul{
+    margin: 0px;
+    padding: 0px;
+}
+#box{
+  background-color: rgba(235,235,242,0.7);
+ padding:  120px 150px ; 
+}
+.box-content{   
+    margin: 0px auto;
+    
+    
+    
+}
+.box-content-body{
+    display: flex;
+    justify-content: space-between;
+}
+.box-content-head{
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.box-content-body-object{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box-content-body-object span{
+margin: 30px 0px 30px 30px;
+}
+.box-content-body-object p {
+    margin: 0px 0px 40px 30px;
+    color: darkgray;
+}
+    
+
+.fa-book-open {
+    margin: 30px 0px 50px 30px; 
+}
+.fa-user-friends{
+    margin: 30px 0px 50px 30px; 
+    
+}
+.fa-clock{
+   margin:  30px 0px 50px 30px;  
+}
