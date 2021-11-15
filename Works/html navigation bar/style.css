@@ -1,0 +1,51 @@
+/* restart default properties  */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.porto-bar-right ul li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.porto-bar-right ul li a{
+    text-decoration: none;
+color: black;
+}
+/* general properties */
+#porto{
+    border: 1px solid red;
+    padding: 50px;
+}
+.porto-bar{
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+.porto-bar-right{
+    border: 1px solid blue;
+
+    
+}
+.porto-bar-left{
+    border: 1px solid orangered;
+    margin: auto 0px auto 40px;
+}
+.porto-bar-right ul{
+    display: flex;
+    
+    
+}
+.porto-bar-right ul li{
+    margin: 10px;
+
+
+}
+.fa-search{
+    margin: auto ;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+span {
+    font-size: 50px;
+}
