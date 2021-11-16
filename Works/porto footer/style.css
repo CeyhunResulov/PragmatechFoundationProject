@@ -1,0 +1,57 @@
+/* reset */
+body {
+    margin: 0px;
+    padding: 0px;
+    
+}
+ul{
+    list-style-type: none;
+    
+}
+a {
+    text-decoration: none;
+
+}
+#nav-up{
+
+    border: 1px solid red;
+    background-color: rgb(56, 54, 54);
+}
+.nav-up-container{
+    border: 1px solid blue;
+    width: 1400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-up-container-left{
+    border: 1px solid orangered;
+}
+.nav-up-container-left ul{
+    display: flex;
+    
+}
+.nav-up-container-left ul li a{
+    margin: 15px;
+    display: flex;
+    align-content: center;
+    color: white;
+    text-transform: uppercase;
+}
+.nav-up-container-right{
+    border: 1px solid green;
+    color: white;
+}
+.nav-down{
+    border: 1px solid turquoise;
+}
+.nav-down-box{
+    border: 1px solid yellow;
+}
+.nav-down-box-left{
+    border: 1px solid blueviolet;
+}
+.nav-down-box-right{
+    border: 1px solid fuchsia;
+}
