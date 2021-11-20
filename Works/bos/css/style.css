@@ -1,0 +1,14 @@
+.box{
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+}
+.container {
+    
+    border:1px solid red;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
