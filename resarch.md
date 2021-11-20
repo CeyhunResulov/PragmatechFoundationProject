@@ -30,8 +30,19 @@ display:flex                    ----   alt-alta olan elementleri bir setirde yer
 
 
 display:grid               ------  hem setir hem de sutun uzre qutulari yerlesdirir
-grid-template-row: 1fr 1fr 1fr        ------  setirleri yaradir
-grid-template-column: auto auto auto     ------  sutunlari yaradir
-grid-gap: 10px 20px        ------  setir ve sutun qutulari arasinda bosluq yaradir 1 ci setirler arasi bosluq,ikinci sutunlar arasi bosluq
-grid-column-start:  1       ------  bu iki emir sutunun hansi hisseni tutmasini mueyyen edir
-grid-column-end:3
+1.grid-template-row: 1fr 1fr 1fr        ------  setirleri yaradir
+2.grid-template-column: auto auto auto     ------  sutunlari yaradir
+3.grid-gap: 10px 20px        ------  setir ve sutun qutulari arasinda bosluq yaradir 1 ci setirler arasi bosluq,ikinci sutunlar arasi bosluq
+4.grid-column-start:  1       ------>  bu iki emir sutunun hansi hisseni tutmasini mueyyen edir
+5.grid-column-end:3           ------^
+6.grid-row-start:
+7.grid-row-end:
+6.grid-area: x / y / s / d    ------ bu emir grid-column ve grid-row kodlarini ozunde birlesdirir
+                                     grid-row-start(x),grid-column-start(y),grid-row-end(s),grid-column-end.
+
+
+
+
+display:grid ve display:flex ferqleri:
+displey:grid eyni vaxta hem setir hemde sutun uzre istifade oluna bilir.esasen boyuk hisselerin hazirlanmasinda istifade olunur.
+displey:flex ya setir yadaki sutun uzre qutulari yerlesdire bilir.kicik elementleri flex ile yerlesdirmek daha rahat olar mence.mes ul>li>a kimi hisseler ucun flex daha yaxsidir
