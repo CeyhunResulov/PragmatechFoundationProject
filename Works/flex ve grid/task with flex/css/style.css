@@ -1,0 +1,51 @@
+#port{
+    
+    background-color: rgb(159, 125, 199);
+}
+.port-container{
+    border: 1px solid red;
+    width: 1200px;
+    margin: 0px auto;
+}
+.port-container-header{
+    color: white;
+    text-align: center;
+}
+.port-container-body{
+   
+    display: flex;
+    justify-content: center;
+    
+
+}
+.port-container-body-column-left div {
+    border: 1px solid teal;
+    width: 440px;
+    height: 270px;
+    margin: 5px;
+}
+.port-container-body-column-left div img{
+    width: 100%;
+    height: 100%;
+}
+.port-container-body-column-center div img{
+    width: 100%;
+    height: 100%;
+}
+.port-container-body-column-right div img{
+    width:100%;
+    height: 100%;
+}
+.port-container-body-column-center div{
+    
+    width: 440px;
+    height: 545px;
+    margin: 5px;
+}
+.port-container-body-column-right div{
+    
+    width: 440px;
+    height: 270px; 
+    margin:5px; 
+
+}
