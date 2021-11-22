@@ -46,3 +46,38 @@ display:grid               ------  hem setir hem de sutun uzre qutulari yerlesdi
 display:grid ve display:flex ferqleri:
 displey:grid eyni vaxta hem setir hemde sutun uzre istifade oluna bilir.esasen boyuk hisselerin hazirlanmasinda istifade olunur.
 displey:flex ya setir yadaki sutun uzre qutulari yerlesdire bilir.kicik elementleri flex ile yerlesdirmek daha rahat olar mence.mes ul>li>a kimi hisseler ucun flex daha yaxsidir
+
+
+# inline ve inline-blok ferqleri
+ 1.inline elemente "width ve height" vermek olmur
+ 2.inline-block da ise "witdh ve height" yeni en ve hundurluk vemek olur
+
+
+
+ # semantik web ne demekdir?
+ html5 ile sehifedeki hissselere verilen adlardir
+
+
+
+ # taq ve atribut nedir?
+ <> bu isareler arasindaki her bir element tag-dir
+ atribut --????
+
+ # <!DOCTYPE html> nedir?
+ html ve xhtml var bunlari ferqlendirmek ucun bu taq istifade olunur/
+
+ # inherit ve initial?
+ initial-ilkin demkdir
+ inherit-miras alan demekdir
+ 
+
+ # html5 ve evvelki versiyalar arasindaki ferqler
+
+  html5 de evvelkilerden ferqli olaraq sehifenin hisseleri adlandirilib.yeni evvelki versiyalarda butun hisseler ucun div istifade olunurdu 
+  html5 de 
+  <section></section>
+  <nav></nav>
+  <article></article>
+  ve s.
+
+ 
