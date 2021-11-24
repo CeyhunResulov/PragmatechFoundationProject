@@ -1,14 +1,44 @@
-.box{
-    border: 1px solid black;
+.link-block{
+    background-color: rgb(57, 115, 201);
+    position: relative;
+    border: 1px solid red;
+}
+.link {
+    border: 1px solid red;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+}
+.link ul{
+    text-align: center;
+}
+.link ul li {
+    list-style-type: none;
+    border: 1px solid red;
     
 }
-.container {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 150px 150px 200px;
+.link ul li a {
+    text-decoration: none;
+    color: rgb(57, 115, 201);
+    background-color: white;
+    padding: 10px;
 }
-div :nth-child(4){
-    display: grid;
-    grid-area: 1 / 4 / 5 / 5;
+.block ul li{
+    list-style-type:none ;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-color: rgb(57, 115, 201);
+    margin: 5px;
+    text-align: center;
+}
+.block{
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
 }
