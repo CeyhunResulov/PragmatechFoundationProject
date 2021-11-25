@@ -1,0 +1,33 @@
+#container-img{
+    border: 2px solid blue;
+    width: 1060px;
+    height: 530px;
+    margin: 140px 0px 0px 180px;
+    background-image: url(https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-img-box{
+    border: 1px solid orangered;
+}
+.container-img-box-header{
+    border: 1px solid springgreen;
+    display: flex;
+    justify-content: space-around;
+
+}
+.container-img-box-header span{
+    color: white;
+}
+.container-img-box-body{
+    border: 1px solid violet;
+    display: flex;
+    align-content: center;
+}
+.container-img-box-body h1{
+    color: white;
+    text-align: center;
+}
+.container-img-box-body h6{
+    color: white;
+}
