@@ -1,33 +1,168 @@
+/* reset */
+body,ul,h1,h2 ,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+}
+/* section1 img proporties */
 #container-img{
-    border: 2px solid blue;
-    width: 1060px;
-    height: 530px;
-    margin: 140px 0px 0px 180px;
-    background-image: url(https://image.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg);
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    background-image: url(https://demo.w3layouts.com/demos_new/template_demo/09-02-2018/intro-demo_Free/669036360/web/images/b4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    
+    
 }
-.container-img-box{
-    border: 1px solid orangered;
-}
-.container-img-box-header{
-    border: 1px solid springgreen;
+/*section1-nav-header */
+.container-img-header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-top: 5em;
+    position: relative;
+    
+}
+.container-img-header h1 a{
+    text-decoration: none;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-img-header button {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 5px;
+    width: 37px;
+    height: 37px;
+    font-size: 14px;
+    margin: auto 0px;
+}
+.container-img-header button a i{
+    color: white;
 
 }
-.container-img-box-header span{
-    color: white;
+/* section1-dropdown */
+.container-img-header button ul{
+    position: absolute;
+    right: 40%;
+    left: 40%;
+    position: fixed;
+    top: 150px;
+    display: none;
+    
 }
-.container-img-box-body{
-    border: 1px solid violet;
+.container-img-header button ul li{
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+.container-img-header button ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+    text-transform: capitalize;
+    
+}
+/* section1-body */
+.container-img-body{
+    border: 1px solid white;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    
+    
+     
 }
-.container-img-box-body h1{
+.container-img-body-user{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 3.9em;
     color: white;
+    margin-top: 350px ;
+
+}
+.container-img-body-user h4{
+    font-size: 100px;
+    font-weight: 200px;
+    letter-spacing: 3px;
+}
+.container-img-body-work{
     text-align: center;
-}
-.container-img-box-body h6{
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 16px 0px;
     color: white;
+}
+.container-img-body-user a {
+    color:white;
+    text-decoration: none;    
+}
+.container-img-body-user a i{
+    font-weight: 100;
+}
+.container-img-body-user h4{
+    font-size: 60px;
+    font-weight:400px;
+}
+/* sectin2 personal information */
+#container-information{
+    border: 1px solid red;
+    padding-top: 3.9em;
+}
+.container-information-box{
+    border: 1px solid blue;
+    height: 429px;
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+}
+.container-information-box-left{
+    border: 20px solid black;
+    width: 380px;
+    height: 429px;
+}
+.container-information-box-right{
+    border: 1px solid red;
+    width: 450px;
+    height: 429px;
+}
+.container-information-box-right-name{
+    border: 1px solid black;
+    
+}
+.container-information-box-right-name h1{
+    font-size: 20px;
+}
+.container-information-box-right button{
+    border: 1px solid black;
+}
+.container-information-box-right-sosial{
+    margin-top: 30px;
+}
+.container-information-box-right-sosial i{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
 }
