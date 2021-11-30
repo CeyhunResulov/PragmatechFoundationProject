@@ -1,5 +1,6 @@
 /* reset */
-body,ul,h1,h2 ,h3,h4,h5,h6{
+body,ul,h1,h2 ,h3,h4,h5,h6,a{
+    text-decoration: none;
     margin: 0px;
     padding: 0px;
 }
@@ -7,13 +8,12 @@ body,ul,h1,h2 ,h3,h4,h5,h6{
 #container-img{
     border: 1px solid red;
     font-family: 'Montserrat', sans-serif;
-    height: 800px;
-    background-image: url(https://demo.w3layouts.com/demos_new/template_demo/09-02-2018/intro-demo_Free/669036360/web/images/b4.jpg);
+    background-image: url(/picture/sectıon1pıct.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 800px;
     position: relative;
     
     
@@ -24,21 +24,20 @@ body,ul,h1,h2 ,h3,h4,h5,h6{
     justify-content: space-between;
     width: 75%;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: auto;
-    padding-top: auto;
+    padding: 0px 15px;
     margin-top: 5em;
     position: relative;
     
 }
-.container-img-header h1 a{
+.container-img-header a{
     text-decoration: none;
-    font-size: 50px;
+    
+}
+.container-img-header a h1{
+    text-decoration: none;
     letter-spacing: 2px;
-    font-weight: 300;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 300 50px  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container-img-header button {
@@ -85,23 +84,16 @@ body,ul,h1,h2 ,h3,h4,h5,h6{
     top: 0px;
     bottom: 0px;
     display: flex;
-    flex-direction: column;
-    
-    
-     
+    flex-direction: column; 
 }
 .container-img-body-user{
-    
     display: flex;
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin:350px 15px 0px;
     font-size: 3.9em;
     color: white;
-    margin-top: 350px ;
-
 }
 .container-img-body-user h4{
     font-size: 100px;
@@ -130,39 +122,78 @@ body,ul,h1,h2 ,h3,h4,h5,h6{
 #container-information{
     border: 1px solid red;
     padding-top: 3.9em;
-}
+    background-color: #fff
+    font-family:'Montserrat',sans-serif;
+}    
 .container-information-box{
     border: 1px solid blue;
-    height: 429px;
-    width: 750px;
+    height: 469px;
+    width: 70%;
     margin: 0 auto;
     display: flex;
 }
-.container-information-box-left{
+ 
+.container-information-box-left img{
     border: 20px solid black;
     width: 380px;
     height: 429px;
 }
 .container-information-box-right{
     border: 1px solid red;
-    width: 450px;
-    height: 429px;
+    width: 100%;
+    height: 469px;
 }
 .container-information-box-right-name{
     border: 1px solid black;
+    width: 80%;
+    background-color: hsl(0, 0%, 96%);
+    padding: 32px 32px;
     
 }
 .container-information-box-right-name h1{
-    font-size: 20px;
+    font:1000 20px;
+    letter-spacing: 3px;
+    padding-bottom: 9px;
+    color: black;
+    font-weight: bold;
 }
-.container-information-box-right button{
+.container-information-box-right-name h4{
+    font:500 17px;
+    letter-spacing: 2px;
+    color: #000;
+}
+.container-information-box-right p{
+    font: 14px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+.container-information-box-right a{
     border: 1px solid black;
+    padding: 7px 15px;
+    margin:60px 0px 20px 20px;
+    font:600 12px;
+    background-color: #00c4ff;
+    border: 1px solid #00c4ff;
+    color: white;
+
+  
+    
 }
 .container-information-box-right-sosial{
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    height: 50px;
+    position: relative;
+    top: 120px;
 }
 .container-information-box-right-sosial i{
+    display: inline-block;
     border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    
 }
