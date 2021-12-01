@@ -122,8 +122,8 @@ body,ul,h1,h2 ,h3,h4,h5,h6,a{
 #container-information{
     border: 1px solid red;
     padding-top: 3.9em;
-    background-color: #fff
-    font-family:'Montserrat',sans-serif;
+    margin-bottom: 300px;
+    
 }    
 .container-information-box{
     border: 1px solid blue;
@@ -131,6 +131,7 @@ body,ul,h1,h2 ,h3,h4,h5,h6,a{
     width: 70%;
     margin: 0 auto;
     display: flex;
+    
 }
  
 .container-information-box-left img{
@@ -139,61 +140,64 @@ body,ul,h1,h2 ,h3,h4,h5,h6,a{
     height: 429px;
 }
 .container-information-box-right{
-    border: 1px solid red;
+    border: 1px solid rgb(143, 107, 107);
     width: 100%;
     height: 469px;
+    position: relative;
 }
 .container-information-box-right-name{
     border: 1px solid black;
-    width: 80%;
-    background-color: hsl(0, 0%, 96%);
+    width: 90%;
+    height: 15%;
+    box-shadow: 5px 5px 30px darkgray;
     padding: 32px 32px;
     
 }
 .container-information-box-right-name h1{
-    font:1000 20px;
+    font:600 35px monospace;
     letter-spacing: 3px;
     padding-bottom: 9px;
-    color: black;
-    font-weight: bold;
+    
 }
 .container-information-box-right-name h4{
-    font:500 17px;
+    font:500 25px monospace;
     letter-spacing: 2px;
-    color: #000;
+    
 }
 .container-information-box-right p{
-    font: 14px;
+    font: 15px monospace;
     line-height: 31px;
     letter-spacing: 1px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-top: 45px;
+
 }
 .container-information-box-right a{
-    border: 1px solid black;
-    padding: 7px 15px;
-    margin:60px 0px 20px 20px;
-    font:600 12px;
+    padding: 8px 14px;
+    display:inline-block;
+    font:600 12px ;
     background-color: #00c4ff;
     border: 1px solid #00c4ff;
     color: white;
-
-  
-    
+    margin: 20px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container-information-box-right-sosial{
     display: flex;
     align-items: center;
     border: 1px solid red;
     height: 50px;
-    position: relative;
-    top: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
 }
 .container-information-box-right-sosial i{
     display: inline-block;
-    border: 1px solid black;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    margin: 15px;
-    
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: blak;
+    color: whte;
+    text-align: center;
 }
