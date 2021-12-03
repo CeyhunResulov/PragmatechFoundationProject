@@ -19,7 +19,7 @@ a {
   
 }
 /* section1 img proporties */
-#container-img {
+#container {
   border: 1px solid black;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +31,7 @@ a {
   position: relative;
 }
 /*section1-nav-header */
-.container-img-header {
+.container-header {
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -87,18 +87,8 @@ a {
   font-weight: 600;
   text-transform: capitalize;
 }
-/* section1-body */
-.container-img-body {
-  border: 1px solid rgb(250, 245, 245);
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column; 
-} 
-.container-img-body-user {
+/* section1-body */ 
+.container-body-user {
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -111,19 +101,19 @@ a {
   top: 50%;
   bottom: -50px; 
 }
-.container-img-body-user h4 {
+.container-body-user h4 {
   font-size: 100px;
   font-weight: 200px;
   letter-spacing: 3px;
 }
-.container-img-body-work  {
+.container-body-work  {
   padding: 16px 0px;
   color: white;
   position: relative;
   text-align: center;
   top: 43%;
 }
-.container-img-body-work span{
+.container-body-work span{
   letter-spacing: 3px;
   font:400 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -134,7 +124,7 @@ a {
 .icon i{
   font-weight: 100;
 }
-.container-img-body-user h4 {
+.container-body-user h4 {
   font-size: 60px;
   font-weight: 400px;
 }
@@ -150,39 +140,39 @@ a {
   display: flex;
 }
 
-.container-information-box-left img {
+.box-left img {
   border: 20px solid black;
   width: 380px;
   height: 429px;
 }
-.container-information-box-right {
+.box-right {
   width: 100%;
   height: 469px;
   position: relative;
 }
-.container-information-box-right-name {
+.box-right-name {
   width: 90%;
   height: 15%;
   box-shadow: 5px 5px 30px darkgray;
   padding: 32px 32px;
 }
-.container-information-box-right-name h1 {
+.box-right-name h1 {
   font: 600 35px monospace;
   letter-spacing: 3px;
   padding-bottom: 9px;
 }
-.container-information-box-right-name h4 {
+.box-right-name h4 {
   font: 500 25px monospace;
   letter-spacing: 2px;
 }
-.container-information-box-right p {
+.box-right p {
   font: 15px monospace;
   line-height: 31px;
   letter-spacing: 1px;
   margin-left: 30px;
   margin-top: 45px;
 }
-.container-information-box-right a {
+.box-right a {
   padding: 8px 14px;
   display: inline-block;
   font: 600 12px;
@@ -194,13 +184,13 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container-information-box-right-sosial {
+.box-right-sosial {
   display: flex;
   position: absolute;
   bottom: 5px;
   left: 30px;
 }
-.container-information-box-right-sosial a {
+.box-right-sosial a {
   border:1px solid black;
   border-radius: 50%;
   background-color: black;
@@ -334,8 +324,99 @@ margin-bottom: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   letter-spacing: 2px;
 }
+/* section 4 services */
 
+ .background{
+   width: 100%;
+   height: 750px;
+   background-image: url(/picture/s1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 50px;
+   margin-bottom: 50px;
+   
+   
+ } 
+.service-grid{
+  width: 74%;
+  height: 675px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 670px;
+  grid-template-rows: 1fr 2fr 2fr 2fr ;
+  gap: 30px;
   
+} 
+.service-grid :nth-child(1){
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+  color: white;
+  font-weight: 300;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+.service-blue{
+  background-color: #00c4ff;
+  
+}
+.service-blue i{
+  color: white;
+  font-size: 35px;
+  margin-top: 25px;
+}
+.service-blue span{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+.service-blue h4{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  color: white;
+}
+.service-orange{
+  background-color: #fb8a2e;
+}
+.service-orange i{
+  color: white;
+  font-size: 35px;
+  margin-top: 25px;
+}
+.service-orange span{
+ display: block;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 5px;
+  padding-top: 15px; 
+}
+.service-orange h4{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  color: white;
+}
+
+.service-white{
+  grid-column: 3/4;
+  grid-row: 2/5;
+  background-color: white;
+  
+}
+.service-grid :nth-child(7){
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
 
 
 
