@@ -1,4 +1,5 @@
 /* reset */
+li,
 body,
 ul,
 h1,
@@ -11,15 +12,17 @@ a {
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  list-style-type: none;
+  
 }
 /* section1 img proporties */
 #container-img {
-  border: 1px solid red;
+  border: 1px solid black;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background-image: url(/picture/sectıon1pıct.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 800px;
   position: relative;
@@ -34,10 +37,10 @@ a {
   margin-top: 5em;
   position: relative;
 }
-.container-img-header a {
+.intro{
   text-decoration: none;
 }
-.container-img-header a h1 {
+.intro h1 {
   text-decoration: none;
   letter-spacing: 2px;
   color: white;
@@ -45,7 +48,7 @@ a {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container-img-header button {
+.container-header-btn{
   border: 2px solid white;
   background-color: black;
   border-radius: 5px;
@@ -53,67 +56,79 @@ a {
   height: 37px;
   font-size: 14px;
   margin: auto 0px;
+  
 }
-.container-img-header button a i {
+.info-bar{
   color: white;
 }
+
 /* section1-dropdown */
-.container-img-header button ul {
+.dropdown{
+  border: 1px solid white;
   position: absolute;
   right: 40%;
   left: 40%;
   position: fixed;
   top: 150px;
   display: none;
+  
 }
-.container-img-header button ul li {
+.info-bar-list {
   list-style-type: none;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+  text-align: center;
 }
-.container-img-header button ul li a {
-  text-decoration: none;
+.info-bar-list a {
   color: white;
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 600;
   text-transform: capitalize;
 }
 /* section1-body */
 .container-img-body {
-  border: 1px solid white;
-  height: 800px;
+  border: 1px solid rgb(250, 245, 245);
+  height: 100px;
   width: 100%;
   position: absolute;
   top: 0px;
   bottom: 0px;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; 
+} 
 .container-img-body-user {
   display: flex;
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  margin: 350px 15px 0px;
   font-size: 3.9em;
   color: white;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 50%;
+  bottom: -50px; 
 }
 .container-img-body-user h4 {
   font-size: 100px;
   font-weight: 200px;
   letter-spacing: 3px;
 }
-.container-img-body-work {
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 3px;
+.container-img-body-work  {
   padding: 16px 0px;
   color: white;
+  position: relative;
+  text-align: center;
+  top: 43%;
 }
-.container-img-body-user a {
+.container-img-body-work span{
+  letter-spacing: 3px;
+  font:400 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.icon{
   color: white;
   text-decoration: none;
 }
-.container-img-body-user a i {
+.icon i{
   font-weight: 100;
 }
 .container-img-body-user h4 {
@@ -123,12 +138,12 @@ a {
 /* sectin2 personal information */
 #container-information {
   padding-top: 3.9em;
-  margin-bottom: 300px;
+  
 }
 .container-information-box {
   height: 469px;
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto auto 190px;
   display: flex;
 }
 
@@ -189,5 +204,72 @@ a {
   margin:0px 5px 0px 0px;  
   
 }
+/* section3 personal data */
+.personal-data-grid{
+  border: 1px solid red;
+  height: 439px;
+  width: 80%;
+  margin: 25px auto auto 190px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  margin-bottom: 50px;
+  
+}
+.personal-data-grid div {
+background-color: tomato;
+}
+.personal-data-grid :nth-child(1){
+  display: grid;
+  grid-row: 1/3;
+  
+}
+.my-data{
+font:600 35px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 2px;
+margin-left: 10px;
+
+}
+.container-data{
+  display: flex;
+
+
+  
+}
+.data-list-first li{
+  font-weight: bold;
+  
+  padding: 10px;
+}
+.data-list-second li{
+  font-weight: 50; 
+  margin-bottom: 5px;
+  padding: 20px;
+  
+}
+.link{
+  display: flex;
+}
+.link-down{
+  border: 1px solid #00c4ff;
+  background-color: #00c4ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin:15px 30px auto 10px
+
+  
+}
+.link-hire{
+  border: 1px solid #00c4ff;
+  background-color: #00c4ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin:15px 30px auto 10px
+  
+}
+
 
 
