@@ -337,7 +337,6 @@ margin-bottom: 10px;
    background-repeat: no-repeat;
    background-size: cover;
    padding-top: 50px;
-   margin-bottom: 50px;
    margin-top: 75px;
    
    
@@ -467,6 +466,168 @@ margin-bottom: 10px;
 .white-row:hover .row-link{
   background-color: black;
 }
+/* section 5 eucation */
+#education{
+  width: 100%;
+  height: 700px;
+}
+.education-grid{
+  width: 75%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  column-gap: 100px;
+  margin: 70px auto;
+}
+.edu-white{
+  grid-column: 1/2;
+  grid-row: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edu-white h1{
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+}
+.edu-blue{
+  background-color: #00c4ff;
+  
+}
+.edu-blue span{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color:white;
+  line-height: 1;
+  display: block;
+  margin: 30px auto 10px 30px;
+}
+.edu-blue h3{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 auto 10px 30px;
+}
+.edu-blue p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: white;
+  margin: 0 auto 30px 30px;
+}
+.edu-orange{
+  background-color: #fb8a2e;
+  box-shadow: 10px 10px 40px 12px rgb(131, 128, 128);
+}
+.edu-orange span{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color:white;
+  line-height: 1;
+  display: block;
+  margin: 30px auto 10px 30px;
+}
+.edu-orange h3{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 auto 10px 30px;
+}
+.edu-orange p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: white;
+  margin: 0 auto 30px 30px;
+}
+/* section 6 experience */
+#experience{
+  width: 100%;
+  height: 700px;
+}
+.exp-grid{
+  width: 73%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  column-gap: 100px;
+  margin: 10px auto;
+}
+.exp-white{
+  grid-column: 2/3;
+  grid-row: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp-white h1{
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+}
+.exp-blue{
+  background-color: #00c4ff;
+  
+}
+.exp-blue span{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color:white;
+  line-height: 1;
+  display: block;
+  margin: 30px auto 10px 30px;
+}
+.exp-blue h3{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 auto 10px 30px;
+}
+.exp-blue p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: white;
+  margin: 0 auto 30px 30px;
+}
+.exp-orange{
+  background-color: #fb8a2e;
+  box-shadow: 10px 10px 40px 12px rgb(131, 128, 128);
+}
+.exp-orange span{
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color:white;
+  line-height: 1;
+  display: block;
+  margin: 30px auto 10px 30px;
+}
+.exp-orange h3{
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0 auto 10px 30px;
+}
+.exp-orange p{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: white;
+  margin: 0 auto 30px 30px;
+}
+
+
 
 
 
