@@ -671,50 +671,10 @@ margin-bottom: 10px;
   object-fit: cover;
 }
 /* section 8 contact */
-
-
-
-
-
-
-/* .title-data h1{
-text-align: center;
-
-}
-.form-data{
-  display: flex;
-}
-.form-data{
-  display: flex;
-  justify-content: center;
-}
-#text, #tel, #email{
-  padding: 15px;
-   width: 40em;
-  
-}
-.message {
-  display: flex;
-  justify-content: center;
-}
-.send{
-  display: flex;
-  justify-content: center;
-}
-#send{
-  width: 89em;
-  padding: 12px;
-  background-color: black;
-  color: white;
-}
-#send :hover{
-  font-size: 15px;
-  color: #00c4ff;
-} */
 #contact{
   width: 100%;
   height: 525px;
-  padding: 75px 0;
+  padding: 75px 0 25px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,7 +687,7 @@ text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 30px;
   row-gap: 20px;
   
   
@@ -737,6 +697,7 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  
   
 }    
 
@@ -753,26 +714,73 @@ text-align: center;
   
 }
  .text {
+  padding: 18px;
+  width: 100%;
+  border: 1px solid black;
+  
+  
+}
+#message{
   padding: 15px;
   width: 100%;
+  border: 1px solid black;
 }
 .message{
-  grid-column: 1/3;
+grid-column: 1/3;
   grid-row: 4/5;
-  width: 100%;
 }
 .send{
   grid-column: 1/3;
   grid-row: 5/6;
+  margin-top: 10px;
   
 }
 #send{
   width: 100%;
-  padding: 13px 0;
+  padding: 12px 0;
   color: white;
   background-color: black;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
+.text:hover{
+  border:1px solid #00c4ff;
+}
+#message:hover{
+  border: 1px solid #00c4ff;
+}
+#send:hover{
+  color: #00c4ff;
+}
+/* section-9 map */
+#map{
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  display:flex;
+  align-items: center;
+}
+.map-child{
+  width: 74%;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.map-pict{
+  border: 1px solid red;
+  width: 40%;
+  height: 200px;
+}  
+.address{
+  border: 1px solid red;
   
+}
+span,a{
+  display: block;
+}
 
 
 
