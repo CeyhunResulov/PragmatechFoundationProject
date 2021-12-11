@@ -781,9 +781,51 @@ grid-column: 1/3;
 span,a{
   display: block;
 }
+.address-data h1{
+  color: #00c4ff;
+  letter-spacing: 2px;
+  font-size: 25px;
+  
 
-
-
-
-
+}
+.address-data{
+  margin: 15px 0 15px 0;
+}
+.address-data h1,span,a{
+  text-align: right;
+  letter-spacing: 2px;
+}
+.address-data span{
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+}
+.address-data a{
+  font-size: 14px;
+  margin: 10px 0 10px 0;
+  color:black;
+}
+/* section 10 end bar */
+#end-bar{
+  background-color: #fb8a2e;
+  width: 100%;
+  height: 150px;
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-bar-sosial{
+  display: flex;
+  
+}
+.end-bar-sosial a{
+  background-color: black;
+  margin: 0 17px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+} 
+.end-bar-sosial :hover{
+  background-color: #00c4ff;
+}
 
