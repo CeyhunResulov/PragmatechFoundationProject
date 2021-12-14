@@ -1,4 +1,4 @@
-
-for(let i=1;i<1001; i=i+1){
-    console.log(i)
-}
+let a
+a = 'hello word'
+alert = (a)
+return a
