@@ -19,28 +19,34 @@ function textcolor() {
 // emr 04--metnin daxilinde nece herf oldugunu neticenin qarsisinda gosterin
 
 function herflerisay() {
-a = document.querySelector(".card p").innerHTML
-x =document.querySelector("ul").innerHTML
-c=a.length+x.length
-b= [c]
-document.querySelector(".card div").innerHTML+=b
+    a = document.querySelector(".card p").innerHTML
+    x = document.querySelector("ul").innerHTML
+    c = a.length + x.length
+    b = [c]
+    document.querySelector(".card div").innerHTML += b
 }
 
 // emr 05 --metnin daxilinde nece soz oldugunu neticenin qarsisinda gosterin
- function sozsayi(){
-    a =document.querySelector(".card p").innerHTML.split(" ")
-    b=document.querySelector("ul").innerHTML
-    c =a.length
-    d=[a]
-     document.querySelector(".card div").innerHTML= d
- }
+
+function sozsayi() {
+    let cardP = document.querySelector(".card p")
+    let innerp = cardP.innerText.replaceAll('.', ' ')
+    let herf = 0
+
+    for (let say of innerp) {
+        if (say ==' ')
+        herf++
+    }
+    let son=innerp.length-herf
+    document.querySelector(".card div").innerHTML += son
+}
 
 // emr 10
 function listyerdeyis(a, b) {
-    a = document.querySelector(".card ul li:nth-child(7)").innerHTML 
-    b = document.querySelector(".card ul li:nth-child(1)").innerHTML 
-    document.querySelector(".card ul li:nth-child(1)").innerHTML=a
-    document.querySelector(".card ul li:nth-child(7)").innerHTML=b
+    a = document.querySelector(".card ul li:nth-child(7)").innerHTML
+    b = document.querySelector(".card ul li:nth-child(1)").innerHTML
+    document.querySelector(".card ul li:nth-child(1)").innerHTML = a
+    document.querySelector(".card ul li:nth-child(7)").innerHTML = b
 }
 
 
