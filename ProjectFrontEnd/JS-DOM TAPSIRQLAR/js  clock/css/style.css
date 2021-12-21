@@ -1,0 +1,16 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    height: 2px;
+    width: 18em;
+    background-color: rgb(172, 126, 126);
+    position: absolute;
+    left:156px ;
+    top: 332px;
+    transform: rotate(130deg);
+    transform-origin: right top;
+    
+}
