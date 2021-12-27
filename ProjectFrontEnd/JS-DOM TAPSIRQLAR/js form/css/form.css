@@ -26,6 +26,7 @@ body{
     justify-content: space-around;
 }
 .subject{
+    display: flex;
     width: 92%;
     margin: 0 auto;
     

@@ -8,9 +8,19 @@
     width: 18em;
     background-color: rgb(172, 126, 126);
     position: absolute;
-    left:156px ;
-    top: 332px;
+    left:474px ;
+    top: 333px;
     transform: rotate(130deg);
     transform-origin: right top;
     
+}
+.minute{
+    height: 2px;
+    width: 18em;
+    background-color: rgb(12, 3, 3);
+    position: absolute;
+    left:474px ;
+    top: 333px;
+    transform: rotate(130deg);
+    transform-origin: right top;
 }

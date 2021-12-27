@@ -17,6 +17,9 @@
 <body>
     <!-- section1 img -->
     <section id="container">
+        <button type="button" class="close" onclick="close()">
+            <i class="fal fa-times"></i>
+        </button>
         <div class="container-header">
 
             <a class="intro" href="#">
@@ -24,7 +27,7 @@
             </a>
 
             <button class="container-header-btn">
-                <a class="info-bar" href="https://www.youtube.com/watch?v=-gv2B73Vfxw">
+                <a class="info-bar" href="#dropdown" onclick="dropdown()">
                     <i class="fas fa-bars"></i>
                 </a>
             </button>
@@ -36,6 +39,7 @@
                 <li class="info-bar-list"><a href="">gallery</a></li>
                 <li class="info-bar-list"><a href="">contact</a></li>
             </ul>
+
         </div>
 
         <div class="container-body-user">
@@ -58,31 +62,35 @@
                     <h1>Kelly Jhon</h1>
                     <h4>Web Design & Web Developer</h4>
                 </div>
-                <div>
+                <div class="btn-readmore">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br> commodo ligula eget dolor.
                         Aenean
                         massa. Cum sociis natoque <br> penatibus adipiscing elit. Aenean commodo ligula eget dolor.</p>
 
                     <a href="">READ MORE</a>
                 </div>
-                <div class="box-right-sosial">
-
-                    <a href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fa fa-rss"></i>
-                    </a>
-
-                    <a href="">
-                        <i class="fab fa-vk"></i>
-                    </a>
-                </div>
+                <ul class="box-right-sosial">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -392,23 +400,28 @@
     </section>
     <!-- section-10 end bar  -->
     <section id="end-bar">
-        <div class="end-bar-sosial">
-            <a href="" style="padding: 10px 13px;">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-
-            <a href="">
-                <i class="fab fa-twitter"></i>
-            </a>
-
-            <a href="">
-                <i class="fa fa-rss"></i>
-            </a>
-
-            <a href="">
-                <i class="fab fa-vk"></i>
-            </a>
-        </div>
+        <ul class="end-bar-sosial">
+            <li>
+                <a href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-rss"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fab fa-vk"></i>
+                </a>
+            </li>
+        </ul>
     </section>
     <script src="./js/app.js">
     </script>

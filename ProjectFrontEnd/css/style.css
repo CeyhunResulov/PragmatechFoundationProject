@@ -20,7 +20,6 @@ a {
 }
 /* section1 img proporties */
 #container {
-  border: 1px solid black;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background-image: url(/picture/sectıon1pıct.jpg);
@@ -36,8 +35,7 @@ a {
   justify-content: space-between;
   width: 75%;
   margin: 0 auto;
-  padding: 0px 15px;
-  margin-top: 5em;
+  padding: 5em 15px 0px;
   position: relative;
 }
 .intro{
@@ -63,11 +61,12 @@ a {
 }
 .info-bar{
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 /* section1-dropdown */
 .dropdown{
-  border: 1px solid white;
   position: absolute;
   right: 40%;
   left: 40%;
@@ -75,11 +74,28 @@ a {
   top: 150px;
   display: none;
   
+  
+}
+.close{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+
+}
+.close i{
+  color: white;
+  font-size: 4em;
+  font-weight: 1px;
+   
 }
 .info-bar-list {
   list-style-type: none;
   margin-bottom: 45px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .info-bar-list a {
   color: white;
@@ -110,11 +126,11 @@ a {
   padding: 16px 0px;
   color: white;
   position: relative;
-  text-align: center;
   top: 43%;
 }
 .container-body-work span{
   letter-spacing: 3px;
+  text-align: center;
   font:400 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .icon{
@@ -172,8 +188,8 @@ a {
   margin-left: 30px;
   margin-top: 45px;
 }
-.box-right a {
-  padding: 8px 14px;
+.btn-readmore a{
+   padding: 8px 14px;
   display: inline-block;
   font: 600 12px;
   background-color: #00c4ff;
@@ -183,20 +199,34 @@ a {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
 .box-right-sosial {
   display: flex;
   position: absolute;
   bottom: 5px;
   left: 30px;
 }
-.box-right-sosial a {
-  border:1px solid black;
+.box-right-sosial li{
+  border: 1px solid black;
+  list-style-type: none;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   background-color: black;
-  margin:0px 5px 0px 0px;  
-  
+   margin:0px 5px 0px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
+.box-right-sosial a {
+    color:white;
+    font-size: 13px;
+}
+
+.box-right-sosial li:hover{
+  background-color: #00c4ff;
+  transition: ease .5s;
+}
+
 /* section3 personal data */
 .personal-data-grid{
   height: 439px;
@@ -264,6 +294,7 @@ margin-bottom: 10px;
 }
 .link a:hover{
   background-color: black;
+  transition: ease .5s;
 }
 /* box blue */
 .box-blue{
@@ -751,6 +782,7 @@ grid-column: 1/3;
 }
 #send:hover{
   color: #00c4ff;
+  transition: ease .5s;
 }
 /* section-9 map */
 #map{
@@ -818,14 +850,24 @@ span,a{
   display: flex;
   
 }
-.end-bar-sosial a{
-  background-color: black;
-  margin: 0 17px;
-  color: white;
+.end-bar-sosial li{
+  border: 1px solid black;
+  list-style-type: none;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  padding: 10px;
+  background-color: black;
+   margin:0px 40px 0px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.end-bar-sosial a{
+  color: white;
+  font-size: 12px;
 } 
-.end-bar-sosial :hover{
+.end-bar-sosial li:hover{
   background-color: #00c4ff;
+  transition: ease .5s;
 }
 
