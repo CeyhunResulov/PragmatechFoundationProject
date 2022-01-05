@@ -28,7 +28,8 @@ function changeImage3() {
  function changeImage5() {
      document.querySelector(".big-image img").setAttribute("src", "images/indir (2).jpg")
 
-} 
+}
+
 
 
 

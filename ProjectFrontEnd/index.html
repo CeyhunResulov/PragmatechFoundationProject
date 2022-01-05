@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
@@ -17,27 +18,28 @@
 <body>
     <!-- section1 img -->
     <section id="container">
-        <button type="button" class="close" onclick="close()">
-            <i class="fal fa-times"></i>
-        </button>
+
+
+        <a class="close" href="#dropdown" onclick="getclose()">
+            <i class="fas fa-times"></i>
+        </a>
         <div class="container-header">
 
             <a class="intro" href="#">
                 <h1>INTRO</h1>
             </a>
-
             <button class="container-header-btn">
                 <a class="info-bar" href="#dropdown" onclick="dropdown()">
                     <i class="fas fa-bars"></i>
                 </a>
             </button>
             <ul class="dropdown">
-                <li class="info-bar-list"><a href="">home</a></li>
-                <li class="info-bar-list"><a href="">about</a></li>
-                <li class="info-bar-list"><a href="">services</a></li>
-                <li class="info-bar-list"><a href="">qualification</a></li>
-                <li class="info-bar-list"><a href="">gallery</a></li>
-                <li class="info-bar-list"><a href="">contact</a></li>
+                <li class="info-bar-list"><a href="#container">home</a></li>
+                <li class="info-bar-list"><a href="#container-information">about</a></li>
+                <li class="info-bar-list"><a href="#services">services</a></li>
+                <li class="info-bar-list"><a href="#education">qualification</a></li>
+                <li class="info-bar-list"><a href="#gallery">gallery</a></li>
+                <li class="info-bar-list"><a href="#contact">contact</a></li>
             </ul>
 
         </div>
@@ -45,7 +47,7 @@
         <div class="container-body-user">
             <a class="icon" href=""><i class="fas fa-angle-left"></i></a>
             <h4>I am Kelly Jhon</h4>
-            <a class="icon" href=""> <i class="fas fa-angle-right"></i></a>
+            <a class="icon" href=""><i class="fas fa-angle-right"></i></a>
         </div>
         <div class="container-body-work">
             <span>Web Design</span>
@@ -423,7 +425,7 @@
             </li>
         </ul>
     </section>
-    <script src="./js/app.js">
+    <script src="./js/potfolio.js">
     </script>
 </body>
 
