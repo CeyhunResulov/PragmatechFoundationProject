@@ -191,8 +191,3 @@
 
 # 2. Dörd ədəd daxil edin. Onlardan ən böyüyünü çapa verin.
 
-
-a=5
-b=8
-c=10
-d=15
