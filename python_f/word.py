@@ -1,5 +1,5 @@
 # 2. word = 'Python'. Verilen stringin uzerinde azı 5 dənə string method tətbiq edin
-word='python'
+# word='python'
 #1)  capitaliz() ile cumlenin ilk herfi boyuk olur
 
 # x=word.capitalize()

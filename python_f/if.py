@@ -236,41 +236,41 @@
 #  ============================================= Əgər yox desə, Murad Əliyev, Uğurlar! Yazılsın.
 
 
-ad=input('adinizi daxil edin:')
-if 3<=len(ad)<=11:
-    soyad=input('soyadinizi daxil edin:')       
-    if 5<=len(soyad)<=15:
-            il=input('dogum ilinizi daxil edin:')
-            if len(il)==4:
-                email=input('email daxil edin:')
-                if 10<=len(email)<=22:
-                    spl=email.split('@')
-                    if spl[1]=='gmail.com':
-                        parol=input('parol daxil edin:')                 
-                        if 6<=len(parol)<=13:
-                            tesdiq=input('parolu tesdiqleyin:')
-                            if tesdiq==parol:
-                                print("qydiyyat tamamlandi")
-                                sual=input('qeydiyyatin detallari gosterilsinmi?')
-                                if sual=='he':
-                                    print(f'Ad:{ad} Soyad:{soyad} il:{il} Email:{email} Parol:{parol}')
+# ad=input('adinizi daxil edin:')
+# if 3<=len(ad)<=11:
+#     soyad=input('soyadinizi daxil edin:')       
+#     if 5<=len(soyad)<=15:
+#             il=input('dogum ilinizi daxil edin:')
+#             if len(il)==4:
+#                 email=input('email daxil edin:')
+#                 if 10<=len(email)<=22:
+#                     spl=email.split('@')
+#                     if spl[1]=='gmail.com':
+#                         parol=input('parol daxil edin:')                 
+#                         if 6<=len(parol)<=13:
+#                             tesdiq=input('parolu tesdiqleyin:')
+#                             if tesdiq==parol:
+#                                 print("qydiyyat tamamlandi")
+#                                 sual=input('qeydiyyatin detallari gosterilsinmi?')
+#                                 if sual=='he':
+#                                     print(f'Ad:{ad} Soyad:{soyad} il:{il} Email:{email} Parol:{parol}')
                                 
-                                elif sual=='yox':
-                                    print(f'{ad}, ugurlar!')                    
-                            else:
-                                print('parolu duzgun tesdiq edin!')        
-                        else:
-                            print('parolun simvol sayi duzgun deyil') 
-                    else:
-                        print('emailin sonunda @gmail.com yazilmalidir!')                        
-                else:
-                    print("email simvol sayi duzgun deyil") 
-            else:
-                print("il daxil ederken simvol sayi 4 olmalidir")
-    else:
-            print("soyad simvol sayi 5-15 araliginda olmalidir")
-else:
-    print('ad simvol sayi 3-11 araliginda olmalidir')                               
+#                                 elif sual=='yox':
+#                                     print(f'{ad}, ugurlar!')                    
+#                             else:
+#                                 print('parolu duzgun tesdiq edin!')        
+#                         else:
+#                             print('parolun simvol sayi duzgun deyil') 
+#                     else:
+#                         print('emailin sonunda @gmail.com yazilmalidir!')                        
+#                 else:
+#                     print("email simvol sayi duzgun deyil") 
+#             else:
+#                 print("il daxil ederken simvol sayi 4 olmalidir")
+#     else:
+#             print("soyad simvol sayi 5-15 araliginda olmalidir")
+# else:
+#     print('ad simvol sayi 3-11 araliginda olmalidir')                               
 
 
 
