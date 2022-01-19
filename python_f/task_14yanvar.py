@@ -175,18 +175,11 @@
 #  sonda listi return etmelidi. (mes : [27,22,34,44],{"tural": 27,"soltan": 22} funksiyaya gonderirsen o sene [27,22] qaytarir.
 
 
-def dictandlist(_list, dict):
-    a=[]
-    for i in range(0,len(_list)-1):
-        if _list[i]==dict:
-            a.append(_list[i])
-
-    print(a)
-print(dictandlist([17, 23, 35], {"tural": 17,"soltan": 35}))
-    
-
-
-# a={"tural": 17,"soltan": 35}
-# x=a.values()
-# print(x)
+# def diclist(x):
+#     c=[]
+#     for i in range(0,len(x[0])):
+#         if x[0][i] in x[1].values():
+#             c.append(x[0][i])  
+#     print(c)
+# diclist([[27,22,34,44,13], {"tural": 27,"soltan": 22,"eli": 13}])
 
