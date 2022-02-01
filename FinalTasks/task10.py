@@ -5,7 +5,7 @@
 
 
 def SplitAndJoin(n):
-    n=n.split(' ')
-    new_text='-'.join(n)
+    n = n.split(' ')
+    new_text = '-'.join(n)
     print(new_text)
 SplitAndJoin(input())

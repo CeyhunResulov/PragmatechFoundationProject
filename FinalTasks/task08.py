@@ -16,7 +16,7 @@ def sagird(n):
             studentsAndGrades.append(studentAndGrade)
     grades.sort()
     print(grades)
-    for i in range(0,n):
+    for i in range(0, n):
         if grades[0] != grades[1] and grades[1] == studentsAndGrades[i][1]:
             print(studentsAndGrades[i][0])
 sagird(int(input()))
