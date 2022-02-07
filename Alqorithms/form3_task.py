@@ -4,7 +4,8 @@ def addToTuple(element):
     
     _list=list(tpl)
     _list.append(int(element))
-    return _list
+    new_tpl=tuple(_list)
+    return new_tpl
     
 print(addToTuple((input('tuple elave etmek istediyini elementi yazin:'))))
 
