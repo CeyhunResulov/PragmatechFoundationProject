@@ -1,0 +1,109 @@
+{% extends 'admin/base.html' %}
+{% block adminPages %}
+
+<div class="container">
+    <div class="row">
+        <h1>education section</h1>
+        <div class="col-12">
+            <h1>education</h1>
+            <h2>Melumatlari daxil et:</h2>
+            <form action="/admin/education" method="POST" enctype="multipart/form-data">
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="title" name="edu_title">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="clients" name="first_head">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="coffe" name="first_year">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="avards" name="first_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="ideas" name="second_head">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="first work" name="second_year">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="first work info" name="second_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="second work" name="third_head">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="second work info" name="third_year">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="third work" name="third_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="third work info" name="fourth_head">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="fourth work" name="fourth_year">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="fourth work info" name="fourth_info">
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="new-data">
+                </div>
+            </form>
+        </div>
+        <h1>Yuklenen butun sekiller ve melumatlar</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">first head</th>
+                    <th scope="col">first year</th>
+                    <th scope="col">first info</th>
+                    <th scope="col">second head</th>
+                    <th scope="col">second year</th>
+                    <th scope="col">second info</th>
+                    <th scope="col">third head</th>
+                    <th scope="col">third year</th>
+                    <th scope="col">third info</th>
+                    <th scope="col">fourth head</th>
+                    <th scope="col">fourth year</th>
+                    <th scope="col">fourth info</th>
+                    
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for edu_info in edu_infos %}
+                <tr>
+                    <th scope="row">{{edu_info.s_id}}</th>
+                    <td>{{edu_info.s_edu_title}}</td>
+                    <td>{{edu_info.first_head}}</td>
+                    <td>{{edu_info.first_year}}</td>
+                    <td>{{edu_info.first_info}}</td>
+                    <td>{{edu_info.second_head}}</td>
+                    <td>{{edu_info.second_year}}</td>
+                    <td>{{edu_info.second_info}}</td>
+                    <td>{{edu_info.third_head}}</td>
+                    <td>{{edu_info.third_year}}</td>
+                    <td>{{edu_info.third_info}}</td>
+                    <td>{{edu_info.third_head}}</td>
+                    <td>{{edu_info.third_year}}</td>
+                    <td>{{edu_info.third_info}}</td>
+                    <td>{{edu_info.fourth_head}}</td>
+                    <td>{{edu_info.fourth_year}}</td>
+                    <td>{{edu_info.fourth_info}}</td>
+                    <td>
+                        <a class="btn " href="/admin/education/delete/{{edu_info.s_id}}">delete</a>
+                        <a class="btn " href="#">update</a>
+
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {%endblock%}

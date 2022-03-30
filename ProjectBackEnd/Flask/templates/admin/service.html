@@ -1,0 +1,114 @@
+{% extends 'admin/base.html' %}
+{% block adminPages %}
+
+<div class="container">
+    <div class="row">
+        <h1>service section</h1>
+        <div class="col-12">
+            <h1>Service</h1>
+            <h2>Melumatlari daxil et:</h2>
+            <form action="/admin/service" method="POST" enctype="multipart/form-data">
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="title" name="s_title">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="clients" name="s_clients">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="coffe" name="s_coffe">
+                </div>               
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="avards" name="s_avards">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="ideas" name="s_ideas">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="first work" name="work_first">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="first work info" name="work_first_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="second work" name="work_second">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="second work info" name="work_second_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="third work" name="work_third">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="third work info" name="work_third_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="fourth work" name="work_fourth">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="fourth work info" name="work_fourth_info">
+                </div>
+                <div class="my-3">
+                    <input type="file" class="form-control" placeholder="picture" name="service_img">
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="new-data">
+                </div>
+            </form>
+        </div>
+        <h1>Yuklenen butun sekiller ve melumatlar</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">clients</th>
+                    <th scope="col">coffe</th>
+                    <th scope="col">avards</th>
+                    <th scope="col">ideas</th>
+                    <th scope="col">first work</th>
+                    <th scope="col">first work info</th>
+                    <th scope="col">second work</th>
+                    <th scope="col">second work info</th>
+                    <th scope="col">third work</th>
+                    <th scope="col">third work info</th>
+                    <th scope="col">fourth work</th>
+                    <th scope="col">fourth work info</th>
+                    <th scope="col">service back img</th>
+                    <th scope="col"></th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for info in infos %}
+                <tr>
+                    <th scope="row">{{info.s_id}}</th>
+                    <td>{{info.s_title}}</td>
+                    <td>{{info.s_clients}}</td>
+                    <td>{{info.s_coffe}}</td>
+                    <td>{{info.s_avards}}</td>
+                    <td>{{info.s_ideas}}</td>
+                    <td>{{info.work_first}}</td>
+                    <td>{{info.work_first_info}}</td>
+                    <td>{{info.work_second}}</td>
+                    <td>{{info.work_second_info}}</td>
+                    <td>{{info.work_third}}</td>
+                    <td>{{info.work_third_info}}</td>
+                    <td>{{info.work_fourth}}</td>
+                    <td>{{info.work_fourth_info}}</td>
+                    <td>{{info.service_img}}</td>
+                    <td>
+                        <img src="/static/service/{{info.service_img}}" alt="" class="img-thumbnail" style="width: 200px;">
+                    </td>
+                    <td>
+                        <a class="btn " href="/admin/service/delete/{{info.s_id}}">delete</a>
+                        <a class="btn " href="#">update</a>
+
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {%endblock%}

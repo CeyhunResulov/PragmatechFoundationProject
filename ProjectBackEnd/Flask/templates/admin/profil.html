@@ -20,21 +20,79 @@
                     <input type="file" class="form-control" placeholder="picture" name="user_img">
                 </div>
                 <div class="my-3">
-                    <input type="submit" class="btn btn-primary" value="new-info">
+                    <input type="text" class="form-control" placeholder="name" name="_name">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="birthday" name="_year">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="phone" name="_phone">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="address" name="_address">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="email" name="_email">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="website" name="_website">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="webdesign" name="_webdesign">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="web_info" name="web_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="uxdesign" name="_uxdesign">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="ux_info" name="ux_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="photoshop" name="_photoshop">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="photo_info" name="photo_info">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="phone_info" name="_phonedesign">
+                </div>
+                <div class="my-3">
+                    <input type="text" class="form-control" placeholder="uxdesign" name="phone_info">
+                </div>
+                <div class="my-3">
+                    <input type="submit" class="btn btn-primary" value="new-data">
                 </div>
             </form>
         </div>
-        <h1>Yuklenen butun sekiller</h1>
+        <h1>Yuklenen butun sekiller ve melumatlar</h1>
 
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">id</th>
-                    <th scope="col">user name</th>
-                    <th scope="col">user work</th>
-                    <th scope="col">user info</th>
-                    <th scope="col">user img</th>
-                    <th scope="col"></th>
+                    <th scope="col">userName</th>
+                    <th scope="col">userWork</th>
+                    <th scope="col">userInfo</th>
+                    <th scope="col">user_name</th>
+                    <th scope="col">year</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">address</th>
+                    <th scope="col">email</th>
+                    <th scope="col">website</th>
+                    <th scope="col">webdesignBox</th>
+                    <th scope="col">webdesignBox_info</th>
+                    <th scope="col">uxdesignBox</th>
+                    <th scope="col">uxdesignBox_info</th>
+                    <th scope="col">photoshopBox</th>
+                    <th scope="col">photoshopBox_info</th>
+                    <th scope="col">phonedesignBox</th> 
+                    <th scope="col">phonedesignBox_info</th> 
+                    <th scope="col">userImg</th>
+                    <th scope="col">picteres</th>
+                    
+                    
                 </tr>
             </thead>
             <tbody>
@@ -43,19 +101,33 @@
                     <th scope="row">{{data.s_id}}</th>
                     <td>{{data.user_name}}</td>
                     <td>{{data.user_work}}</td>
-                    <td>{{data.user_info}}</td>
+                    <td>{{data.user_info}}</td>                   
+                    <td>{{data._name}}</td>
+                    <td>{{data._year}}</td>
+                    <td>{{data._phone}}</td>
+                    <td>{{data._address}}</td>
+                    <td>{{data._email}}</td>
+                    <td>{{data._website}}</td>
+                    <td>{{data._webdesign}}</td>
+                    <td>{{data.web_info}}</td>
+                    <td>{{data._uxdesign}}</td>
+                    <td>{{data.ux_info}}</td>
+                    <td>{{data._photoshop}}</td>
+                    <td>{{data.photo_info}}</td>
+                    <td>{{data._phonedesign}}</td>
+                    <td>{{data.phone_info}}</td>
+                    <td>{{data.user_img}}</td>
                     <td>
-                        <img src="/static/uploads/{{data.user_img}}" alt="" class="img-thumbnail">
+                        <img src="/static/uploads/{{data.user_img}}" alt="" class="img-thumbnail" style="width: 200px;">
                     </td>
                     <td>
-                        <a href="#">update</a>
-                        <a href="#">delete</a>
+                        <a class="btn " href="/admin/profil/delete/{{data.s_id}}">delete</a>
+                        <a class="btn " href="#">update</a>
 
                     </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
-    </div>
-</div>
-{% endblock %}
+
+        {%endblock%}
