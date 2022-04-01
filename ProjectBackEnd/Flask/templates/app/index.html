@@ -237,62 +237,67 @@
     </section>
     <!-- section-5 education -->
     <section id="education">
+      {% for edu in edu_infos %}
       <div class="education-grid">
         <div class="edu-white">
-          <h1>EDUCATION</h1>
+          <h1>{{edu.edu_title}}</h1>
         </div>
         <div class="edu-blue">
-          <span>2011-2014</span>
-          <h3>Bachelor Degree Of Education</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{edu.first_year}}</span>
+          <h3>{{edu.first_head}}</h3>
+          <p>{{edu.first_info}}</p>
         </div>
         <div class="edu-orange">
-          <span>2011-2014</span>
-          <h3>Bachelor Degree Of Education</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{edu.second_year}}</span>
+          <h3>{{edu.second_head}}</h3>
+          <p>{{edu.second_info}}</p>
         </div>
         <div class="edu-blue">
-          <span>2011-2014</span>
-          <h3>Bachelor Degree Of Education</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{edu.third_year}}</span>
+          <h3>{{edu.third_head}}</h3>
+          <p>{{edu.third_info}}</p>
         </div>
         <div class="edu-orange">
-          <span>2011-2014</span>
-          <h3>Bachelor Degree Of Education</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{edu.fourth_year}}</span>
+          <h3>{{edu.fourth_head}}</h3>
+          <p>{{edu.fourth_info}}</p>
         </div>
       </div>
+      {% endfor %}
     </section>
     <!-- section-6 experience -->
     <section id="experience">
+      {% for exp in exp_infos %}
       <div class="exp-grid">
         <div class="exp-white">
-          <h1>EXPERIENCE</h1>
+          <h1>{{exp.exp_title}}</h1>
         </div>
         <div class="exp-blue">
-          <span>2012-2014</span>
-          <h3>WebDesigner – Mutation Media</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{exp.first_year}}</span>
+          <h3>{{exp.first_head}}</h3>
+          <p>{{exp.first_info}}</p>
         </div>
         <div class="exp-orange">
-          <span>2012-2014</span>
-          <h3>WebDesigner – Mutation Media</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{exp.second_year}}</span>
+          <h3>{{exp.second_head}}</h3>
+          <p>{{exp.second_info}}</p>
         </div>
         <div class="exp-blue">
-          <span>2012-2014</span>
-          <h3>WebDesigner – Mutation Media</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{exp.third_year}}</span>
+          <h3>{{exp.third_head}}</h3>
+          <p>{{exp.ehird_info}}</p>
         </div>
         <div class="exp-orange">
-          <span>2012-2014</span>
-          <h3>WebDesigner – Mutation Media</h3>
-          <p>Lorem ipsum dolor sit amet,</p>
+          <span>{{exp.fourth_year}}</span>
+          <h3>{{exp.fourth_head}}</h3>
+          <p>{{exp.fourth_info}}</p>
         </div>
       </div>
+      {% endfor %}
     </section>
     <!-- section-7 gallery -->
     <section id="gallery">
+      {% for gallery in gallerys %}
       <div class="gallery-back-color"></div>
       <div class="gallery-back">
         <div class="gallery-back-modal">
@@ -330,6 +335,7 @@
                     alt="" data="1">
             </div> -->
       </div>
+      {% endfor %}
     </section>
     <!-- section 8 contact -->
     <section id="contact">

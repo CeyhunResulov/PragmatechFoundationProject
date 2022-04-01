@@ -2,12 +2,12 @@
 
 <div class="container">
   <div class="row">
-    <h1>education section</h1>
+    <h1>experience section</h1>
     <div class="col-12">
-      <h1>education</h1>
+      <h1>experience</h1>
       <h2>Melumatlari daxil et:</h2>
       <form
-        action="/admin/education"
+        action="/admin/experience"
         method="POST"
         enctype="multipart/form-data"
       >
@@ -16,7 +16,7 @@
             type="text"
             class="form-control"
             placeholder="title"
-            name="edu_title"
+            name="exp_title"
           />
         </div>
         <div class="my-3">
@@ -142,29 +142,29 @@
         </tr>
       </thead>
       <tbody>
-        {% for edu_info in edu_infos %}
+        {% for exp_info in exp_infos %}
         <tr>
-          <th scope="row">{{edu_info.s_id}}</th>
-          <td>{{edu_info.edu_title}}</td>
-          <td>{{edu_info.first_head}}</td>
-          <td>{{edu_info.first_year}}</td>
-          <td>{{edu_info.first_info}}</td>
-          <td>{{edu_info.second_head}}</td>
-          <td>{{edu_info.second_year}}</td>
-          <td>{{edu_info.second_info}}</td>
-          <td>{{edu_info.third_head}}</td>
-          <td>{{edu_info.third_year}}</td>
-          <td>{{edu_info.third_info}}</td>
-          <td>{{edu_info.third_head}}</td>
-          <td>{{edu_info.third_year}}</td>
-          <td>{{edu_info.third_info}}</td>
-          <td>{{edu_info.fourth_head}}</td>
-          <td>{{edu_info.fourth_year}}</td>
-          <td>{{edu_info.fourth_info}}</td>
+          <th scope="row">{{exp_info.s_id}}</th>
+          <td>{{exp_info.exp_title}}</td>
+          <td>{{exp_info.first_head}}</td>
+          <td>{{exp_info.first_year}}</td>
+          <td>{{exp_info.first_info}}</td>
+          <td>{{exp_info.second_head}}</td>
+          <td>{{exp_info.second_year}}</td>
+          <td>{{exp_info.second_info}}</td>
+          <td>{{exp_info.third_head}}</td>
+          <td>{{exp_info.third_year}}</td>
+          <td>{{exp_info.third_info}}</td>
+          <td>{{exp_info.third_head}}</td>
+          <td>{{exp_info.third_year}}</td>
+          <td>{{exp_info.third_info}}</td>
+          <td>{{exp_info.fourth_head}}</td>
+          <td>{{exp_info.fourth_year}}</td>
+          <td>{{exp_info.fourth_info}}</td>
           <td>
             <a
               class="btn btn-primary"
-              href="/admin/education/delete/{{edu_info.s_id}}"
+              href="/admin/experience/delete/{{exp_info.s_id}}"
               >delete</a
             >
             <a class="btn btn-primary" href="#">update</a>

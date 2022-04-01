@@ -1,5 +1,5 @@
 
-from run import Education, app,myData,Service,db
+from run import Education, app,myData,Service,Experience,Gallery,db
 from flask import render_template,redirect,request
 import os
 # admin index route
@@ -7,7 +7,6 @@ import os
 @app.route('/admin', methods=['GET','POST'])
 def admin_index():
     return render_template('admin/index.html')
-
 
 @app.route('/admin/profil', methods=['GET','POST'])
 def admin_profil():
@@ -175,5 +174,149 @@ def admin_education_delete(id):
     db.session.delete(edu_info)
     db.session.commit()
     return redirect('/admin/education')
+
+
+
+# experience section
+
+@app.route('/admin/experience', methods=['GET','POST'])
+def admin_experience():
+    exp_infos=Experience.query.all()
+    if request.method=='POST':
+        sql_exp_title=request.form['exp_title']
+        sql_first_head=request.form['first_head']
+        sql_first_year=request.form['first_year']
+        sql_first_info=request.form['first_info']
+        sql_second_head=request.form['second_head']
+        sql_second_year=request.form['second_year']
+        sql_second_info=request.form['second_info']
+        sql_third_head=request.form['third_head']
+        sql_third_year=request.form['third_year']
+        sql_third_info=request.form['third_info']
+        sql_fourth_head=request.form['fourth_head']
+        sql_fourth_year=request.form['fourth_year']
+        sql_fourth_info=request.form['fourth_info']
+        exp_info=Experience(
+            exp_title=sql_exp_title,
+            first_head=sql_first_head,
+            first_year=sql_first_year,
+            first_info=sql_first_info,
+            second_head=sql_second_head,
+            second_year=sql_second_year,
+            second_info=sql_second_info,
+            third_head=sql_third_head,
+            third_year=sql_third_year,
+            third_info=sql_third_info,
+            fourth_head=sql_fourth_head,
+            fourth_year=sql_fourth_year,
+            fourth_info=sql_fourth_info
+        )
+        db.session.add(exp_info)
+        db.session.commit()
+        return redirect('/admin/experience')
+
+    return render_template("admin/experience.html",exp_infos=exp_infos)
+
+@app.route('/admin/experience/delete/<id>', methods=['GET','POST'])
+def admin_experience_delete(id):
+    exp_info=Experience.query.get(id)
+    db.session.delete(exp_info)
+    db.session.commit()
+    return redirect('/admin/experience')
+
+
+# gallery section
+
+
+@app.route('/admin/gallery', methods=['GET','POST'])
+def admin_gallery():
+    gallerys=Gallery.query.all()
+    if request.method=='POST':
+        file_1=request.files['img_1']
+        file_name_1=file_1.filename
+        file_1.save(os.path.join('static/gallery/img_1',file_name_1))
+
+        file_2=request.files['img_2']
+        file_name_2=file_2.filename
+        file_2.save(os.path.join('static/gallery/img_2',file_name_2))
+
+        file_3=request.files['img_3']
+        file_name_3=file_3.filename
+        file_3.save(os.path.join('static/gallery/img_3',file_name_3))
+
+        file_4=request.files['img_4']
+        file_name_4=file_4.filename
+        file_4.save(os.path.join('static/gallery/img_4',file_name_4))
+
+        file_5=request.files['img_5']
+        file_name_5=file_5.filename
+        file_5.save(os.path.join('static/gallery/img_5',file_name_5))
+
+        file_6=request.files['img_6']
+        file_name_6=file_6.filename
+        file_6.save(os.path.join('static/gallery/img_6',file_name_6))
+
+        file_7=request.files['img_7']
+        file_name_7=file_7.filename
+        file_7.save(os.path.join('static/gallery/img_7',file_name_7))
+
+        file_8=request.files['img_8']
+        file_name_8=file_8.filename
+        file_8.save(os.path.join('static/gallery/img_8',file_name_8))
+
+        file_9=request.files['img_9']
+        file_name_9=file_9.filename
+        file_9.save(os.path.join('static/gallery/img_9',file_name_9))
+
+        file_10=request.files['img_10']
+        file_name_10=file_10.filename
+        file_10.save(os.path.join('static/gallery/img_10',file_name_10))
+
+        file_11=request.files['img_11']
+        file_name_11=file_11.filename
+        file_11.save(os.path.join('static/gallery/img_11',file_name_11))
+
+        file_12=request.files['img_12']
+        file_name_12=file_12.filename
+        file_12.save(os.path.join('static/gallery/img_12',file_name_12))
+
+        sql_img_1=file_name_1
+        sql_img_2=file_name_2
+        sql_img_3=file_name_3
+        sql_img_4=file_name_4
+        sql_img_5=file_name_5
+        sql_img_6=file_name_6
+        sql_img_7=file_name_7
+        sql_img_8=file_name_8
+        sql_img_9=file_name_9
+        sql_img_10=file_name_10
+        sql_img_11=file_name_11
+        sql_img_12=file_name_12
+        gallery=Gallery(
+            img_1=sql_img_1,
+            img_2=sql_img_2,
+            img_3=sql_img_3,
+            img_4=sql_img_4,
+            img_5=sql_img_5,
+            img_6=sql_img_6,
+            img_7=sql_img_7,
+            img_8=sql_img_8,
+            img_9=sql_img_9,
+            img_10=sql_img_10,
+            img_11=sql_img_11,
+            img_12=sql_img_12,
+        )
+        db.session.add(gallery)
+        db.session.commit()
+        return redirect('/admin/gallery')
+
+    return render_template("admin/gallery.html",gallerys=gallerys)
+
+@app.route('/admin/gallery/delete/<id>', methods=['GET','POST'])
+def admin_gallery_delete(id):
+    gallery=Gallery.query.get(id)
+    db.session.delete(gallery)
+    db.session.commit()
+    return redirect('/admin/gallery')
 
 

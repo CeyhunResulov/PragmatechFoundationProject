@@ -1,0 +1,166 @@
+{% extends 'admin/base.html' %} {% block adminPages %}
+
+<div class="container">
+  <div class="row">
+    <h1>gallery section</h1>
+    <div class="col-12">
+      <h1>gallery</h1>
+      <h2>Melumatlari daxil et:</h2>
+      <form
+        action="/admin/gallery"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_1"
+            name="img_1"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_2"
+            name="img_2"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_3"
+            name="img_3"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_4"
+            name="img_4"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_5"
+            name="img_5"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_6"
+            name="img_6"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_7"
+            name="img_7"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_8"
+            name="img_8"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_9"
+            name="img_9"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_10"
+            name="img_10"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_11"
+            name="img_11"
+          />
+        </div>
+        <div class="my-3">
+          <input
+            type="file"
+            class="form-control"
+            placeholder="img_12"
+            name="img_12"
+          />
+        </div>
+        <div>
+          <input type="submit" class="btn btn-primary" value="new-data" />
+        </div>
+      </form>
+    </div>
+    <h1>Yuklenen butun sekiller ve melumatlar</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">img_1</th>
+          <th scope="col">img_2</th>
+          <th scope="col">img_3</th>
+          <th scope="col">img_4</th>
+          <th scope="col">img_5</th>
+          <th scope="col">img_6</th>
+          <th scope="col">img_7</th>
+          <th scope="col">img_8</th>
+          <th scope="col">img_9</th>
+          <th scope="col">img_10</th>
+          <th scope="col">img_11</th>
+          <th scope="col">img_12</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for gallery in gallerys %}
+        <tr>
+          <th scope="row">{{gallery.s_id}}</th>
+          <td>{{gallery.img_1}}</td>
+          <td>{{gallery.img_2}}</td>
+          <td>{{gallery.img_3}}</td>
+          <td>{{gallery.img_4}}</td>
+          <td>{{gallery.img_5}}</td>
+          <td>{{gallery.img_6}}</td>
+          <td>{{gallery.img_7}}</td>
+          <td>{{gallery.img_8}}</td>
+          <td>{{gallery.img_9}}</td>
+          <td>{{gallery.img_10}}</td>
+          <td>{{gallery.img_11}}</td>
+          <td>{{gallery.img_12}}</td>
+          <td>
+            <a
+              class="btn btn-primary"
+              href="/admin/gallery/delete/{{gallery.s_id}}"
+              >delete</a
+            >
+            <a class="btn btn-primary" href="#">update</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {%endblock%}
+  </div>
+</div>

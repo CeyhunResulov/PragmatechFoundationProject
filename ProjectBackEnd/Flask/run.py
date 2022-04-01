@@ -71,6 +71,44 @@ class Education(db.Model):
     fourth_info=db.Column(db.String(300))
 
 # db.create_all()
+
+class Experience(db.Model):
+    s_id = db.Column(db.Integer, primary_key=True)
+    exp_title=db.Column(db.String(100))
+    first_head=db.Column(db.String(100))
+    first_year=db.Column(db.String(100))
+    first_info=db.Column(db.String(300))
+    second_head=db.Column(db.String(100))
+    second_year=db.Column(db.String(100))
+    second_info=db.Column(db.String(300))
+    third_head=db.Column(db.String(100))
+    third_year=db.Column(db.String(100))
+    third_info=db.Column(db.String(300))
+    fourth_head=db.Column(db.String(100))
+    fourth_year=db.Column(db.String(100))
+    fourth_info=db.Column(db.String(300))
+
+
+# db.create_all()
+
+
+class Gallery(db.Model):
+    s_id = db.Column(db.Integer, primary_key=True)
+    img_1=db.Column(db.String(100))
+    img_2=db.Column(db.String(100))
+    img_3=db.Column(db.String(100))
+    img_4=db.Column(db.String(300))
+    img_5=db.Column(db.String(100))
+    img_6=db.Column(db.String(100))
+    img_7=db.Column(db.String(100))
+    img_8=db.Column(db.String(100))
+    img_9=db.Column(db.String(100))
+    img_10=db.Column(db.String(100))
+    img_11=db.Column(db.String(100))
+    img_12=db.Column(db.String(100))
+
+# db.create_all()
+
 # import app routes
 from controllers.app.routes import *
 

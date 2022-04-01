@@ -1,3 +1,4 @@
+
 //dropdown hissenin gorunmesi ve gizlenmesi
 function dropdown() {
     document.querySelector(".dropdown-parent").style.visibility = "visible"
